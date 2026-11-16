@@ -1,0 +1,27 @@
+name: Test formulae
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    steps:
+      - name: Set up Homebrew and tap this repo
+        uses: Homebrew/actions/setup-homebrew@main
+
+      - run: brew audit --strict --online quynb93/tap/amux
+      - run: brew install quynb93/tap/amux
+      - run: brew test quynb93/tap/amux
+      - run: amux --version
