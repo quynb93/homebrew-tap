@@ -5,23 +5,23 @@ class Amux < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/quynb93/amux/releases/download/v0.5.0/amux-aarch64-apple-darwin.tar.gz"
-      sha256 "a4e47f2f11ee34cc9fc28942f9aaa28e004b29e80f0ac8046df512bda434ba48"
+      url "https://github.com/quynb93/amux/releases/download/v0.5.1/amux-aarch64-apple-darwin.tar.gz"
+      sha256 "b7cfcf4b16a54157c2c8883184294f63634c23275dcc024a7b9300389e20fef1"
     end
     on_intel do
-      url "https://github.com/quynb93/amux/releases/download/v0.5.0/amux-x86_64-apple-darwin.tar.gz"
-      sha256 "91b99861cca602cea9c8d956af5beafd5476ee81c6951f8719649e404691294c"
+      url "https://github.com/quynb93/amux/releases/download/v0.5.1/amux-x86_64-apple-darwin.tar.gz"
+      sha256 "e659a7169769e01df06ee52532ba91f299da5e7083af18848f6e81d54ca71a33"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/quynb93/amux/releases/download/v0.5.0/amux-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "9bdb7046b3ea88bbe4e4dc6ac07e7218d65f769c21d332f37bc62dc75fb29e9e"
+      url "https://github.com/quynb93/amux/releases/download/v0.5.1/amux-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "bf9bf6be060ed270d342f694925a82a85e4d1fa772b71a719c93f41379db056e"
     end
     on_intel do
-      url "https://github.com/quynb93/amux/releases/download/v0.5.0/amux-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "f8e3cfa180f5e67731e23fa86a4f7b1c35e82426edd8e34d6bd1ca683b78b819"
+      url "https://github.com/quynb93/amux/releases/download/v0.5.1/amux-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "7900f14099900226b0d45e7489d4262f1da2fe6682285918b2c859605894dea8"
     end
   end
 
