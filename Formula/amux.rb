@@ -3,25 +3,33 @@ class Amux < Formula
   homepage "https://github.com/quynb93/amux"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/quynb93/amux/releases/download/v0.11.7"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: ""
+    sha256 cellar: :any_skip_relocation, big_sur: ""
+    sha256 cellar: :any_skip_relocation, arm64_linux: ""
+    sha256 cellar: :any_skip_relocation, x86_64_linux: ""
+  end
+
   on_macos do
     on_arm do
-      url "https://github.com/quynb93/amux/releases/download/v0.11.6/amux-aarch64-apple-darwin.tar.gz"
-      sha256 "1a3ef1ba6a75a6c9aa368292c3e445a60f706e512cc561a80c515a4792333ad0"
+      url "https://github.com/quynb93/amux/releases/download/v0.11.7/amux-aarch64-apple-darwin.tar.gz"
+      sha256 "86262eb77563ab2f74f679e5325aadf6ae52562825d8d540e591df5bbb4a8398"
     end
     on_intel do
-      url "https://github.com/quynb93/amux/releases/download/v0.11.6/amux-x86_64-apple-darwin.tar.gz"
-      sha256 "4d8deafc36f6bf9a4f1ff1608778b6a9c4d1d1095b5ff08dc45b467fb9f28cf6"
+      url "https://github.com/quynb93/amux/releases/download/v0.11.7/amux-x86_64-apple-darwin.tar.gz"
+      sha256 "aa0f0d4d25e5a31a671645d102a38463b9313e8fa3ae02f0b286df1e6a9e7690"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/quynb93/amux/releases/download/v0.11.6/amux-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "e19ce64ad9d504c67abb6d6fde728aea63c4769c52829feb6d832f252626f263"
+      url "https://github.com/quynb93/amux/releases/download/v0.11.7/amux-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "f855c613fa60b087c6591bdbd833f600549cbc8aebdc7792f1a02b214a356662"
     end
     on_intel do
-      url "https://github.com/quynb93/amux/releases/download/v0.11.6/amux-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "2b81ffa0bca24f71b0a4cd18974966194557c0cafd555a407660be9ba9c21b74"
+      url "https://github.com/quynb93/amux/releases/download/v0.11.7/amux-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "b3e70c242a6c7bb42479b526584563f576e8af1c4f492b44e5461abbde94ad9f"
     end
   end
 
