@@ -3,14 +3,6 @@ class Amux < Formula
   homepage "https://github.com/quynb93/amux"
   license "MIT"
 
-  bottle do
-    root_url "https://github.com/quynb93/amux/releases/download/v0.11.7"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: ""
-    sha256 cellar: :any_skip_relocation, big_sur: ""
-    sha256 cellar: :any_skip_relocation, arm64_linux: ""
-    sha256 cellar: :any_skip_relocation, x86_64_linux: ""
-  end
-
   on_macos do
     on_arm do
       url "https://github.com/quynb93/amux/releases/download/v0.11.7/amux-aarch64-apple-darwin.tar.gz"
