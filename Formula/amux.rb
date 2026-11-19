@@ -4,32 +4,32 @@ class Amux < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/quynb93/amux/releases/download/v0.11.12"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "fe5a9a833063ca4277910ec525c34eb0e0280e3c5896d5e8cab53984110a95ef"
-    sha256 cellar: :any_skip_relocation, big_sur: "1a1795211b8842f0c9d428c139608a59444e5befc12c6bf4946bdabf8110b594"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "16e43ea23d42a09a1c889339e8596dc695e9e66276e33bf6255a1b19c3acab69"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "5d01e287f74e6e383aeadbe623a494d981bcea3a0cb7cfdcbaa21fa09ffff3e6"
+    root_url "https://github.com/quynb93/amux/releases/download/v0.11.13"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "faa95a115403e4ac7668549f924748582bcb06ab273a3de60019954cb94d4510"
+    sha256 cellar: :any_skip_relocation, big_sur: "1f87d4ff4e6744d97b2060f05477315f7cb7456e0f9a916089f16d767f200fd3"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "7d55159053455b71e845a10bfd64b14be604ddf6de11d7925a9e873fe458ef9d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "2067d4faf8f943e23d572070b529354fe21e252b2e84bbd73d0aed9d10b25190"
   end
 
   on_macos do
     on_arm do
-      url "https://github.com/quynb93/amux/releases/download/v0.11.12/amux-aarch64-apple-darwin.tar.gz"
-      sha256 "786fe196c0c84fec3c4146ae3bbcf0148028ae69e6470ff820a3d317b5755df2"
+      url "https://github.com/quynb93/amux/releases/download/v0.11.13/amux-aarch64-apple-darwin.tar.gz"
+      sha256 "c5eb6e6ed8a2039f6e449768eda196c01987db2ef10b1425fed612294948d365"
     end
     on_intel do
-      url "https://github.com/quynb93/amux/releases/download/v0.11.12/amux-x86_64-apple-darwin.tar.gz"
-      sha256 "4e6a57d1da5fc490128ca2d0fd16153bf74575e47051def83266e5350ebb67b8"
+      url "https://github.com/quynb93/amux/releases/download/v0.11.13/amux-x86_64-apple-darwin.tar.gz"
+      sha256 "cb353e0bdeca6478add39b10ad3a77e274e03f6b8d58baad1b0d6a511a817388"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/quynb93/amux/releases/download/v0.11.12/amux-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "a09317545644d76fb311b011901db2e888047d33364132d597e3fed6abd38a8c"
+      url "https://github.com/quynb93/amux/releases/download/v0.11.13/amux-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "05ff3c165c458cf503bf72eb3a637fd45c9b4ad60f4cc24ea0fcd39b27555cff"
     end
     on_intel do
-      url "https://github.com/quynb93/amux/releases/download/v0.11.12/amux-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "5d78b8cf48ddd322ccb53b8bd94d3521ff43b311bfce866aae0c3fd459e38dd9"
+      url "https://github.com/quynb93/amux/releases/download/v0.11.13/amux-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "73070ba8527205e3aa8d80722fa6b5781a31169413b017d0ae7e329b05914aea"
     end
   end
 
